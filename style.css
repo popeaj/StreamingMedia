@@ -1,0 +1,360 @@
+/* Document outline */
+
+html {
+    background-color: #020659;
+}
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    background-color: white;
+    max-width: 834px;
+
+}
+header p{
+    margin: 0;
+}
+nav a{
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030a8c;
+    padding: 20px;
+    padding-left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav label {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+nav ul li a:hover {
+    background-color: #590242;
+  }
+h1 {
+    color: white;
+    font-size: 1.25em;
+    line-height: 2em;
+    margin: 0;
+    font-family: Optima;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1em;
+    color: #590242;
+    line-height: 2em;
+    padding:0 20px;
+}
+h3{
+    font-size: 1em;
+    color: white;
+    line-height: 2em;
+}
+p, dl, dd {
+    font-size:1em;
+}
+dl{
+    color: #590242;
+}
+dd{
+    display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+dt{
+    display: inline-block;
+    font-style: italic;
+    padding-right: 10px;
+}
+img{
+    z-index: 1;
+}
+main {
+    width: 100%;
+    overflow: hidden;
+}
+aside{
+    display: block;
+    overflow: hidden;
+}
+footer {
+    background-color: white;
+    color: #590242;
+    text-align: center;
+    padding: .5em 0;
+}
+footer p {
+    font-size: .75em;
+}
+
+
+/* Classes */
+
+.grid-main{
+    display: inline-grid;
+
+}
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    margin: 20px;
+    font-size: .8em;
+}
+.boxes p{
+    margin: 0;
+}
+.boxes img{
+    float: left;
+    display: inline;
+    margin-right: 20px;
+}
+.list-items{
+    background-color: #2699FB;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 330px;
+}
+.right{
+    display: inline;
+    float: left;
+}
+.white{
+    background-color: white;
+    display: block;
+}
+.white button{
+    float: right;
+}
+.lightblue{
+    background-color: #0D8DFB;
+    padding: 20px;
+}
+.darkblue{
+    background-color: #020873;
+    padding: 20px;
+}
+.no-hamburger{
+    list-style-type: none;
+    font-variant: small-caps;
+}
+.no-hamburger a{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Optima;
+}
+.curated {
+    flex: 1;
+}
+.curated section {
+    background-color: #030A8C;
+    display: grid;
+}
+.curatedscroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 330px;
+}
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1FR);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+.scroll div h3{
+    margin: 0;
+    color: #590242;
+    height: 10px;
+}
+.playlists{
+    flex: 1;
+}
+.playlists h2{
+    background-color: white;
+    margin: 0;
+}
+.playlists h3{
+    margin: 0;
+}
+.playlists section {
+    background-color: #030A8C;
+    display: grid;
+}
+.playlist-button {
+    background-color: #590242;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    display: block;
+
+}
+.playlist-button:hover {
+    background-color: #020659;
+}
+.playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+}
+.playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+.playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+.playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+
+/* ids */
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+}
+#blackbluegradient {
+    background: linear-gradient(to left, #000, #2104D9);
+    color: white;
+    padding: 5px 20px;
+}
+#trendingbutton{
+    float: right;
+}
+
+
+/* audio */
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+    z-index: 1;
+}
+#trending img{
+    z-index: 2;
+}
+audio::-webkit-media-controls-mute-buttom {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-buttom {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+/* Start of mediaQ */
+
+@media (max-width: 375px) {
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        left: auto;
+        right: 0;
+      }
+      .burger-icon {
+        display: block;
+      }
+      #nav-toggle:checked ~ .menu {
+        display: block;
+        background-color: #020659;
+        height: 60px;
+      }
+      main {
+        width: 100%;
+        overflow: hidden;
+    }
+    .playlists {
+        width: 100%;
+    }
+    .smooth{
+        padding: 0 1em;
+    }
+    .smooth h1{
+        font-size: 1em;
+    }
+    .smooth p{
+        font-size: .7em;
+    }
+    .white button{
+        float: left;
+    }
+
+    .list-items {
+        display: grid;
+        grid-template-columns: repeat(5, 1FR);
+        grid-template-rows: .5fr;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .curatedscroll {
+        display: grid;
+        grid-template-columns: repeat(5, 1FR);
+        grid-template-rows: .5fr;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #trendingbutton{
+        float: left;
+    }
+}
+
+
+  
